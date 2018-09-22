@@ -543,8 +543,12 @@ ul#nav li.current a { color: #F06000; }
 	text-transform: uppercase;
    letter-spacing: 3px;
    cursor: pointer;
-   display: flex;
-  justify-content: flex-end;
+   /*display: flex;
+   justify-content: flex-end; */
+   width: 148px;
+   display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap; 
 }
 .popup-modal a:hover {	color: #00CCCC; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
