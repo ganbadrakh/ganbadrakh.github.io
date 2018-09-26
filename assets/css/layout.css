@@ -65,7 +65,7 @@ header .banner-text h3 {
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+   color: #E04900;
 }
 header .banner-text hr {
    width: 60%;
@@ -243,7 +243,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #E04900;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -586,7 +586,7 @@ footer {
 }
 
 footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a:hover, footer a:focus { color: #E04900; }
 
 /* copyright */
 footer .copyright {
@@ -623,7 +623,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #11ABB0;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
