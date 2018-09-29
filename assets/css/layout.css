@@ -537,7 +537,7 @@ ul#nav li.current a { color: #F06000; }
    background: #111;
    text-align: left;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
 }
 .popup-modal .link-box a {
    color: #fff;
