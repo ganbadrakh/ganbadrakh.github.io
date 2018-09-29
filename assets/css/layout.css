@@ -537,7 +537,8 @@ ul#nav li.current a { color: #F06000; }
    background: #111;
    text-align: left;
    display: flex;
-   justify-content: space-between;
+   flex-direction: row;
+   justify-content: space-evenly;
 }
 .popup-modal .link-box a {
    color: #fff;
@@ -545,10 +546,12 @@ ul#nav li.current a { color: #F06000; }
 	text-transform: uppercase;
    letter-spacing: 3px;
    cursor: pointer;
+  /* margin-left: 8px; */
+  margin-right: 10px;
    
 }
 .popup-modal a:hover {	color: #00CCCC; }
-.popup-modal a.popup-modal-dismiss { margin-left: 24px; }
+.popup-modal a.popup-modal-dismiss { /*margin-left: 4px;*/}
 
 
 /* fadein/fadeout effect for modal popup
