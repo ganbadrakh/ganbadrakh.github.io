@@ -551,7 +551,7 @@ ul#nav li.current a { color: #F06000; }
    
 }
 .popup-modal a:hover {	color: #00CCCC; }
-.popup-modal a.popup-modal-dismiss:hover { color: red;}
+.popup-modal a.popup-modal-dismiss:hover { color: #E04900;}
 
 .git {
   color: #11ABB0;
