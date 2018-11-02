@@ -322,29 +322,19 @@ ul#nav li.current a { color: #F06000; }
   	animation: security 2s ease;
   	
 }
-.frontend {
+.webdev {
   	width: 90%;
   	animation: frontend 2s ease;
   	
 }
-.backend {
+.data {
   	width: 70%;
   	animation: backend 2s ease;
   	
 }
 .business {
-  	width: 65%;
+  	width: 55%;
   	animation: business 2s ease;
-  	
-}
-.blockchain {
-  	width: 60%;
-  	animation: blockchain 2s ease;
-  	
-}
-.unix {
-  	width: 50%;
-  	animation: unix 2s ease;
   	
 }
 
@@ -352,50 +342,34 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@keyframes frontend {
+@keyframes webdev {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@keyframes backend {
+@keyframes data {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
 @keyframes business {
   0%   { width: 0px;  }
-  100% { width: 65%;  }
-}
-@keyframes blockchain {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@keyframes unix {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 55%;  }
 }
 
 @-webkit-keyframes security {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes frontend {
+@-webkit-keyframes webdev {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-webkit-keyframes backend {
+@-webkit-keyframes data {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
 @-webkit-keyframes business {
   0%   { width: 0px;  }
-  100% { width: 65%;  }
-}
-@-webkit-keyframes blockchain {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes unix {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 55%;  }
 }
 
 /* ------------------------------------------------------------------ */
