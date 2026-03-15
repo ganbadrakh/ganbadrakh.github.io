@@ -11299,7 +11299,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 19rem;
+    padding-left: 20rem;
   }
 }
 h1, .h1,
@@ -11355,7 +11355,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 19rem;
+    width: 20rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
