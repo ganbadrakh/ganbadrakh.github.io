@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #ff7c24;
+  --bs-primary: #14304d;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 255, 109, 15;
+  --bs-primary-rgb: 20, 48, 77;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -61,7 +61,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #000000;
+  --bs-body-bg: #fafaf8;
 }
 
 *,
@@ -108,18 +108,18 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-weight: 700;
   line-height: 1.2;
-  color: #ffffff;
+  color: #14304d;
 }
 
 h1, .h1 {
-  font-size: calc(1.725rem + 5.7vw);
+  font-size: calc(1.5rem + 2.7vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 6rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -241,11 +241,11 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #14304d;
   text-decoration: underline;
 }
 a:hover {
-  color: #ff7c24;
+  color: #2c5f8a;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11293,18 +11293,21 @@ textarea.form-control-lg {
 }
 body {
   padding-top: 3.375rem;
-  color: #6c757d;
+  color: #495057;
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 22rem;
+    padding-left: 19rem;
   }
 }
 h1, .h1,
 h2,
-.h2,
+.h2 {
+  text-transform: uppercase;
+}
+
 h3,
 .h3,
 h4,
@@ -11313,7 +11316,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  text-transform: uppercase;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 h1, .h1 {
@@ -11326,10 +11330,11 @@ p.lead {
 }
 
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  text-transform: none;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.4rem;
 }
 
 #sideNav {
@@ -11355,7 +11360,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 22rem;
+    width: 19rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -11364,9 +11369,13 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 20rem;
-    max-height: 20rem;
-    border: 0.5rem rgba(255, 255, 255, 0.2);
+    width: 13.5rem;
+    height: 20.25rem;
+    max-width: 13.5rem;
+    max-height: 20.25rem;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11402,7 +11411,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #14304d;
 }
 
 .dev-icons {
@@ -11416,7 +11425,7 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  max-width: 75rem;
+  max-width: 85rem;
 }
 section.resume-section .resume-section-content {
   width: 100%;
@@ -11429,9 +11438,216 @@ section.resume-section .resume-section-content {
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+/* ---- Collapsible "additional certifications" section ---- */
+.cert-more {
+  margin-top: 1.5rem;
+}
+.cert-more summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--bs-primary, #14304d);
+  background: rgba(20, 48, 77, 0.05);
+  border: 1.5px solid rgba(20, 48, 77, 0.3);
+  border-radius: 10px;
+  padding: 0.9rem 1.15rem;
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.cert-more summary:hover {
+  background: rgba(20, 48, 77, 0.1);
+  border-color: var(--bs-primary, #14304d);
+  box-shadow: 0 3px 10px rgba(20, 48, 77, 0.12);
+}
+.cert-more summary::-webkit-details-marker {
+  display: none;
+}
+.cert-more summary::before {
+  content: "+";
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--bs-primary, #14304d);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.cert-more[open] summary::before {
+  content: "\2013";
+}
+.cert-more[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Ensure minimum spacing between title and date in title/date flex rows ---- */
+@media (min-width: 768px) {
+  .d-flex.flex-column.flex-md-row.justify-content-between {
+    gap: 1.25rem;
+  }
+}
+
+/* ---- Additional certifications (collapsed list): de-emphasize via size/weight, not flat gray ---- */
+#certifications .cert-more h4.text-secondary {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #5a7690;
+  text-shadow: none;
+}
+
+/* ---- About section name: first name in near-black, last name keeps the navy accent ---- */
+#about h1 {
+  color: #1a1a1a;
+}
+
+/* ---- Credential badges under the name (About Me) ---- */
+.credential-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.credential-badge {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--bs-primary, #14304d);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--bs-primary, #14304d);
+}
+
+/* ---- Hero tagline (About Me, under the name): subtle accent to stand out from plain gray ---- */
+.hero-tagline {
+  color: var(--bs-primary, #14304d);
+  font-weight: 600;
+}
+
+/* ---- Extra breathing room between rows in the collapsed "additional certifications" list ---- */
+#certifications .cert-more ul.fa-ul > li {
+  margin-bottom: 1rem;
+  padding-bottom: 0.25rem;
+}
+#certifications .cert-more ul.fa-ul > li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Core certifications: Credly-style card grid (5 columns, wraps to 2 rows) ---- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 900px) {
+  .cert-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #e4e2dd;
+  border-radius: 14px;
+  padding: 1.25rem 0.75rem 1rem;
+  transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+.cert-card:hover {
+  box-shadow: 0 6px 18px rgba(20, 48, 77, 0.14);
+  transform: translateY(-3px);
+  border-color: var(--bs-primary, #14304d);
+  text-decoration: none;
+}
+.cert-card img {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 0.85rem;
+}
+.cert-card-title {
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  color: var(--bs-primary, #14304d);
+  margin-bottom: 0.4rem;
+}
+.cert-card-meta {
+  font-size: 0.78rem;
+  color: #8a8f96;
+  letter-spacing: 0.01em;
+}
+
+/* ---- Skills section: "Also working with" framework tags ---- */
+.skills-frameworks {
+  border-top: 1px solid #e4e2dd;
+  padding-top: 1.25rem;
+}
+.skills-frameworks-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a8f96;
+  margin-bottom: 0.6rem;
+}
+.framework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.framework-tag {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(20, 48, 77, 0.07);
+  color: var(--bs-primary, #14304d);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ---- Focus Areas: tag-style, consistent with the rest of the page ---- */
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.focus-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(20, 48, 77, 0.06);
+  border: 1px solid rgba(20, 48, 77, 0.2);
+  color: var(--bs-primary, #14304d);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.focus-tag i {
+  font-size: 0.85rem;
 }
