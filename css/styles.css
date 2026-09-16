@@ -11514,21 +11514,11 @@ section.resume-section .resume-section-content {
 }
 
 /* ---- Credential badges under the name (About Me) ---- */
-.credential-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.25rem;
-}
-.credential-badge {
-  display: inline-block;
-  padding: 0.3rem 0.85rem;
-  border: 1px solid var(--bs-primary, #14304d);
-  border-radius: 999px;
-  font-size: 0.85rem;
+.credential-line {
+  font-size: 0.98rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: var(--bs-primary, #14304d);
+  color: #495057;
 }
 
 /* ---- Hero tagline (About Me, under the name): subtle accent to stand out from plain gray ---- */
@@ -11597,6 +11587,8 @@ section.resume-section .resume-section-content {
   margin-bottom: 0.4rem;
 }
 .cert-card-meta {
+  margin-top: auto;
+  padding-top: 0.5rem;
   font-size: 0.78rem;
   color: #6b7078;
   letter-spacing: 0.01em;
